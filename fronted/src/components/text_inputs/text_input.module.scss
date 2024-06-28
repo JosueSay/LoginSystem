@@ -1,0 +1,25 @@
+@import '@styles/fonts.css';
+@import '@styles/reset.css';
+
+.TextInputContainer {
+    color: blue;
+}
+
+.LabelTextInput {
+    color: green;
+
+}
+
+.TextInput {
+    color: white;
+    border-color: blue;
+}
+
+.TextInputIcon {
+    color:brown;
+    border-color: pink;
+}
+
+.ErrorTextInput {
+    color: red;
+}

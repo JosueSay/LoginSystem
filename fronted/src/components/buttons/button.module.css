@@ -1,0 +1,22 @@
+@charset "UTF-8";
+@import '@styles/fonts.css';
+@import '@styles/reset.css';
+.Button {
+  background-color: white;
+  width: 6rem;
+  height: 2rem;
+  color: #0469e3;
+  font-family: var(--text_test);
+  font-size: 1rem;
+  border: 0.1rem solid #0469e3;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease-out;
+  overflow: hidden; /* Esconde el texto que se desborda */
+  text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+}
+
+.Button:hover {
+  background-color: #0469e3;
+  color: white;
+}
