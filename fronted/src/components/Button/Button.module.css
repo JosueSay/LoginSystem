@@ -14,9 +14,10 @@
   overflow: hidden; /* Esconde el texto que se desborda */
   text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
   white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  cursor: pointer;
 }
 
 .Button:hover {
   background-color: #0469e3;
   color: white;
-}
+}/*# sourceMappingURL=Button.module.css.map */

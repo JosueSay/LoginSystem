@@ -1,0 +1,58 @@
+@import '@styles/fonts.css';
+@import '@styles/reset.css';
+
+// Mixins
+@mixin identificacion_componentes ($fondo: blue, $tam_border: 0.1rem, $color_border: red) {
+    background: $fondo;
+    border: $tam_border solid $color_border;
+}
+
+.LoginContainer {
+    @include identificacion_componentes(green, 0.5rem, red);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+.HeaderContainer {
+    @include identificacion_componentes(blue, 0.1rem, blue);
+    flex: 1 1 10%;
+    display: flex;
+    padding: 0.3rem;
+    align-items: center;
+    justify-content: left;
+    overflow: hidden;  /* Asegura que el contenedor no permita el desbordamiento */
+}
+
+.LogoContainer {
+    //@include identificacion_componentes(brown, 0.1rem, black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: auto;
+}
+
+.Logo {
+    //@include identificacion_componentes(yellow, 0.1rem, white);
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+
+.ContentContainer {
+    @include identificacion_componentes(pink, 0.1rem, pink);
+    flex: 3 1 85%;
+    display: flex;
+    backdrop-filter: blur(2rem);
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+
+.FooterContainer {
+    @include identificacion_componentes(green, 0.1rem, green);
+    flex: 1 1 5%;
+    display: flex;
+}
+
+

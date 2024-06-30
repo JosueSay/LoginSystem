@@ -32,7 +32,7 @@
   @returns {JSX.Element} Un componente de input de texto.
 */
 
-import styles from './text_input.module.css'
+import styles from './TextInput.module.css'
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -87,18 +87,35 @@ const TextInput = ({
 
 // Requerimientos de props
 TextInput.propTypes = {
-  label: PropTypes.string.isRequired,
-  error: PropTypes.string.isRequired,
-  stateError: PropTypes.bool.isRequired,
   type: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  placeholder: PropTypes.string,
+  label: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  placeholder: PropTypes.string,
+  error: PropTypes.string.isRequired,
+  stateError: PropTypes.bool.isRequired,
   onChange: PropTypes.func.isRequired,
   isTextInputIcon: PropTypes.bool.isRequired,
   isDoubleIcon: PropTypes.bool,
   icons: PropTypes.array,
   clickIcon: PropTypes.func
 }
+
+// Requerimientos de props por default
+TextInput.defaultProps = {
+  type: 'text',
+  name: 'texto',
+  label: 'Label',
+  value: '',
+  placeholder: 'Placeholder',
+  error: 'Mensaje de error',
+  stateError: false,
+  onChange: undefined,
+  isTextInputIcon: false,
+  isDoubleIcon: false,
+  icons: [],
+  clickIcon: undefined
+};
+
 
 export default TextInput

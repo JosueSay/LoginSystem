@@ -12,7 +12,9 @@ export default defineConfig({
     alias: {
       '@styles': '/src/styles',
       '@components': '/src/components',
-      '@hooks': '/src/hooks'
+      '@hooks': '/src/hooks',
+      '@public': '/public'
+
     }
   },
   base: ''

@@ -1,7 +1,7 @@
 @import '@styles/fonts.css';
 @import '@styles/reset.css';
 
-// Samsung Galaxy A12 Medidas base 
+// sass --watch --no-source-map button.module.scss button.module.css
 
 
 // Variables
@@ -12,7 +12,6 @@ $color_button_nothover: white;
 $color_text_nohover: #0469e3;
 $color_border: #0469e3;
 $font_text: var(--text_test);
-
 
 .Button{
     background-color: $color_button_nothover;
@@ -27,6 +26,7 @@ $font_text: var(--text_test);
     overflow: hidden; /* Esconde el texto que se desborda */
     text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
     white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    cursor: pointer;
 }
 
 .Button:hover{

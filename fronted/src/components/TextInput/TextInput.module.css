@@ -1,0 +1,32 @@
+@import '@styles/fonts.css';
+@import '@styles/reset.css';
+.TextInputContainer {
+  border: 2px solid red;
+}
+
+.LabelTextInput {
+  color: black;
+  font-family: var(--text_test);
+}
+
+.TextInput {
+  color: black;
+  width: 10rem;
+  height: 1rem;
+  border: 0.1rem solid #eaedee;
+  background-color: #f3f3f2;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+  font-family: var(--text_test);
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.TextInputIcon {
+  color: brown;
+  border-color: pink;
+}
+
+.ErrorTextInput {
+  color: red;
+  font-family: var(--text_test);
+}/*# sourceMappingURL=TextInput.module.css.map */

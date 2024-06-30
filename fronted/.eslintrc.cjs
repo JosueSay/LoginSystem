@@ -3,7 +3,7 @@ module.exports = {
         "browser": true,
         "es2021": true
     },
-    "extends": "standard",
+    "extends": ["standard", "plugin:storybook/recommended"],
     "overrides": [
         {
             "files": ["*.js", "*.jsx"], // Aplica estas configuraciones a los archivos JavaScript y JSX

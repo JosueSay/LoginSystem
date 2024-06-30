@@ -1,8 +1,11 @@
 import './App.css'
-import Button from '@components/buttons/button'
+import Button from '@components/Button/Button'
+import TextInput from '@components/TextInput/TextInput'
+import Login from '@components/Login/Login'
 import useForm from '@hooks/userForms'
-import TextInput from '@components/text_inputs/text_input'
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons'
+import { AppRouter } from '@components/Router/Router'
+
 const App = () => {
   const clickButton = () => {
     console.log('Click!')
@@ -12,23 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <div className='BotonIngreso'>
-        <Button content="Ingresar" onClick={clickButton}/>
-        <TextInput
-          label='Username'
-          error='Username incorrecto'
-          stateError= {false}
-          type='text'
-          name='username'
-          placeholder='Ingrese su username'
-          value={formData.username}
-          onChange={handleChange}
-          isTextInputIcon = {false}
-          isDoubleIcon = {true}
-          icons = {[faEye, faEyeSlash]}
-          clickIcon = {null}
-        />
-      </div>
+      <AppRouter/>
     </div>
   )
 }
