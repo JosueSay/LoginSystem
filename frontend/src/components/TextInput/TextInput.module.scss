@@ -1,0 +1,43 @@
+@import '@styles/fonts.css';
+@import '@styles/reset.css';
+
+// sass --watch --no-source-map text_input.module.scss text_input.module.css
+
+// Variables
+$border_textinput: #eaedee;
+$border_select: black;
+$background_textinput: #f3f3f2;
+$text_label: black;
+$font_text: var(--text_test);
+
+.TextInputContainer {
+    border: 2px solid red;
+}
+
+.LabelTextInput {
+    color: $text_label;
+    font-family: $font_text;
+}
+
+.TextInput {
+    color: black;
+    width: 10rem;
+    height: 1rem;
+    border: 0.1rem solid $border_textinput;
+    background-color: $background_textinput;
+    border-radius: 0.5rem;
+    padding: 0.3rem;
+    font-family: $font_text;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.TextInputIcon {
+    color:brown;
+    border-color: pink;
+
+}
+
+.ErrorTextInput {
+    color: red;
+    font-family: $font_text;
+}

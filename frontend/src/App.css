@@ -1,0 +1,9 @@
+@import '@styles/reset.css';
+
+.App {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
