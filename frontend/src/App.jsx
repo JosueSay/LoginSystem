@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <AppRouter/>
+      <Loginn/>
     </div>
   )
 }
